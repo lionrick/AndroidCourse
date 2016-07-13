@@ -37,4 +37,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FragmentsExampleActivity.class);
         startActivity(intent);
     }
+
+    public void gotoCustomAdapterExample(View view) {
+        Intent intent = new Intent(this, CustomAdapterExampleActivity.class);
+        startActivity(intent);
+
+    }
 }
