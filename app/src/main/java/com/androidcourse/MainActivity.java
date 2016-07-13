@@ -1,9 +1,9 @@
 package com.androidcourse;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.RelativeLayout;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,13 +11,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        Button btFrameLayout = new Button(this);
-        btFrameLayout.setText("LinearLayout");
-        RelativeLayout.LayoutParams layoutParams =
-                (RelativeLayout.LayoutParams)btFrameLayout.getLayoutParams();
-        layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL, RelativeLayout.TRUE);
+    public void gotoFrameLayoutExample(View view) {
+        Intent intent = new Intent(this, FrameLayoutActivity.class);
+        startActivity(intent);
+    }
 
+    public void gotoLinearExample(View view) {
+        Intent intent = new Intent(this, LinearLayoutActivity.class);
+        startActivity(intent);
+    }
 
+    public void gotoListViewExample(View view) {
+        Intent intent = new Intent(this, ListViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoGridViewExample(View view) {
+        Intent intent = new Intent(this, GridViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoFragmentsExample(View view) {
+        Intent intent = new Intent(this, FragmentsExampleActivity.class);
+        startActivity(intent);
     }
 }

@@ -24,31 +24,37 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="46dp"
         android:gravity="left"
-        android:text="Framelayout" />
+        android:text="Framelayout"
+        android:onClick="gotoFrameLayoutExample"/>
 
     <Button
         android:id="@+id/btLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LinearLayout" />
+        android:text="LinearLayout"
+        android:onClick="gotoLinearExample"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:text="ListView" />
+        android:text="ListView"
+        android:onClick="gotoListViewExample"
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:text="gridview" />
+        android:text="gridview"
+        android:onClick="gotoGridViewExample"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Fragments" />
+        android:text="Fragments"
+        android:onClick="gotoFragmentsExample"/>
 
 
 </LinearLayout>
